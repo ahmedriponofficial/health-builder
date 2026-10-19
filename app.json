@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Health Builder",
+    "slug": "health-builder",
+    "scheme": "healthbuilder",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "bundleIdentifier": "com.ahmedripon.healthbuilder",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "Health Builder reads your steps, active energy and weight to calculate the calories you burn each day.",
+        "NSHealthUpdateUsageDescription": "Health Builder does not write to Apple Health."
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "@kingstinct/react-native-healthkit",
+        {
+          "NSHealthShareUsageDescription": "Health Builder reads your steps, active energy and weight to calculate the calories you burn each day.",
+          "NSHealthUpdateUsageDescription": "Health Builder does not write to Apple Health.",
+          "background": false
+        }
+      ]
+    ],
+    "web": {
+      "output": "single",
+      "bundler": "metro",
+      "name": "Health Builder",
+      "shortName": "Health",
+      "themeColor": "#2F6B4F",
+      "backgroundColor": "#F4F6F1"
+    }
+  }
+}
